@@ -13,7 +13,8 @@ public class Game {
 
     public static void main(String[] args) throws Exception {
 
-        System.out.println("Welcome traveler!");
+        System.out.println("Just before");
+        System.out.println("UPDATED, Welcome traveler!");
 
         try {
             player = loadGame();
@@ -35,7 +36,7 @@ public class Game {
                 player.findItem("belt");
             }
 
-            Enemy enemy = new Enemy("Ogre");
+            Enemy enemy = new Enemy("Ogre", 20, 15);
             player.battle(enemy);
 
             if (allDone()) break;

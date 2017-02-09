@@ -7,7 +7,7 @@ public class Character {
     int damage;
 
     public void battle(Character enemy) {
-        System.out.printf("%s appears!\n", enemy.name);
+        System.out.printf("%s THIS IS NOW ABOUT TO appears!\n", enemy.name);
 
         while (bothPlayersAlive(enemy)){
             inflictDamage(this, enemy);

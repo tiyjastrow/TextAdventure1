@@ -1,10 +1,9 @@
 
 public class Enemy extends Character {
 
-    public Enemy(String name){
+    public Enemy(String name, int health, int damage) {
         this.name = name;
-        this.health = 20;
-        this.damage = 15;
+        this.health = health;
+        this.damage = damage;
     }
-
 }
